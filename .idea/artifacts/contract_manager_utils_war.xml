@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="contract-manager-utils:war">
+    <output-path>$PROJECT_DIR$/contract-manager/contract-manager-utils/target</output-path>
+    <root id="archive" name="contract-manager-utils-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="contract-manager-utils:war exploded" />
+    </root>
+  </artifact>
+</component>
