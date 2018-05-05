@@ -1,15 +1,33 @@
-package Contract.dao;
+package contract.domain;
 
-import java.io.Serializable;
 import java.util.Date;
 
-public class User implements Serializable{
-	private  int id;
-	private  String username;
-	private  String password;
-	private  int credits;
-	private  String lastIp;
-	private  Date lastVisit;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Table(name="user")
+@Entity
+public class User{
+	
+	@Column(name="ID")
+	int id;
+	
+	@Column(name="username")
+	String username;
+	
+	@Column(name="password")
+	String password;
+	
+	@Column(name="credits")
+	int credits;
+	
+	@Column(name="lastIp")
+	String lastIp;
+	
+	@Column(name="lastVist")
+	Date lastVisit;
+	
 	public int getId() {
 		return id;
 	}
@@ -49,3 +67,5 @@ public class User implements Serializable{
 	
 	
 }
+
+
